@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="gameWindow">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="10.0" prefWidth="125.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="136.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="171.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="236.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="133.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="400.0" GridPane.columnSpan="2147483647" GridPane.rowSpan="2147483647">
+         <image>
+            <Image url="Background.png" />
+         </image>
+      </ImageView>
+      <Canvas fx:id="one" height="133.0" onMouseClicked="#oneSelect" width="133.0" />
+      <Canvas fx:id="two" height="133.0" onMouseClicked="#twoSelect" width="133.0" GridPane.columnIndex="1" />
+      <Canvas fx:id="three" height="133.0" onMouseClicked="#threeSelect" width="133.0" GridPane.columnIndex="2" />
+      <Canvas fx:id="four" height="133.0" onMouseClicked="#fourSelect" width="133.0" GridPane.rowIndex="1" />
+      <Canvas fx:id="five" height="133.0" onMouseClicked="#fiveSelect" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Canvas fx:id="six" height="133.0" onMouseClicked="#sixSelect" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Canvas fx:id="seven" height="133.0" onMouseClicked="#sevenSelect" width="133.0" GridPane.rowIndex="2" />
+      <Canvas fx:id="eight" height="133.0" onMouseClicked="#eightSelect" width="133.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Canvas fx:id="nine" height="133.0" onMouseClicked="#nineSelect" width="133.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+   </children>
+</GridPane>
