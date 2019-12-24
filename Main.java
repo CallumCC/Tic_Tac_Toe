@@ -10,7 +10,7 @@ public class Main extends Application{
 		try {
 			// Load the main scene.
 			GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("Tic.fxml"));
-			Scene scene = new Scene(root, 400, 400);
+			Scene scene = new Scene(root, 400, 450);
 
 			// Place the main scene on stage and show it.
 			primaryStage.setScene(scene);
